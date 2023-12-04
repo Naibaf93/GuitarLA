@@ -1,5 +1,6 @@
 @use '../custom' as *;
+@use '../base/mixins' as m;
 
 .header {
-    background-color: $negro;
+    @include m.background-image('../img/header.jpg');
 }
