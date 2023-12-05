@@ -11858,8 +11858,24 @@ textarea.form-control-lg {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header.jpg");
   background-position: 50%;
   background-size: cover;
+  position: relative;
+}
+.header .header-guitarra {
+  display: none;
+}
+@media (min-width: 992px) {
+  .header .header-guitarra {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
+.navegacion {
+  position: relative;
+  z-index: 1;
+}
 .navegacion a:hover {
   background-color: #e99401;
 }
