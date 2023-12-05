@@ -1,5 +1,7 @@
 @use '../custom' as *;
 @use '../base/mixins' as m;
+@use '../base/animaciones' as *;
+
 
 .header {
     @include m.background-image('../img/header.jpg');
@@ -13,6 +15,11 @@
             position: absolute;
             right: 0;
             bottom: 0;
+
+            animation-name: animarImagen;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
         }
     }
 }
